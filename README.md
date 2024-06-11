@@ -1,2 +1,2 @@
-# curso_python_testesandcodes
-Curso de Python, testando e codando.
+# Praticando com Curso de Python.
+Testando e codando.
