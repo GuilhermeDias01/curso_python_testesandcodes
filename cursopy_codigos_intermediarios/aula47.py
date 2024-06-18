@@ -1,3 +1,5 @@
+# Exercício:
+
 """
 Faça um jogo para o usuário adivinhar qual a palavra secreta.
 - Você vai propor uma palavra secreta qualquer e vai dar a possibilidade para o usuário digitar apenas uma letra.
@@ -7,19 +9,39 @@ Faça um jogo para o usuário adivinhar qual a palavra secreta.
 
 Faça a contagem de tentativas do seu usuário.
 """
+import os
+
+
 palavra_secreta = 'perfume'
-iterador = iter(palavra_secreta)
-mascara_palavra_secreta = ''
+letras_acertadas = ''
+numero_tentativas = 0
 
-for letra in palavra_secreta:
-    mascara_palavra_secreta += letra
-    print(mascara_palavra_secreta)
-'''
-while contador == True:
+while True:
     
-    letra_digitada_usuario_str = input('Digite uma letra: ')
+    letra_digitada_usuário = input('Digite uma letra: ')
+    numero_tentativas += 1
+
+    if len(letra_digitada_usuário) > 1:
+        print('Digite apenas uma letra.')
+        continue    
+
+    if letra_digitada_usuário in palavra_secreta:
+        letras_acertadas += letra_digitada_usuário
+
+    palavra_formada = ''
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            palavra_formada += letra_secreta
+        else:
+            palavra_formada += '*'
+    print(f'Palavra formada: {palavra_formada}')       
+    
+    if palavra_formada == palavra_secreta:
+        os.system('cls')
+        print('Você ganhou! Parabens.')
+        print(f'A palavra secreta é: {palavra_secreta}')
+        print(f'O número de tentativas foi: {numero_tentativas}')
+        letras_acertadas = ''
+        numero_tentativas = 0
 
     
-else:
-    ...
-'''
