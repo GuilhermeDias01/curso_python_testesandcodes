@@ -1,3 +1,5 @@
-lista_de_compras = []
-
-print(lista_de_compras,type(lista_de_compras))
+cpf = '12345678'
+arroz = cpf[0]
+feijao = cpf[1]
+print(arroz)
+print(feijao)
