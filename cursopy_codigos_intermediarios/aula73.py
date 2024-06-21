@@ -23,7 +23,7 @@ converter = retorna_par_ou_impar(valor)
 print(f'O valor informado é : {converter}')
 
 
-# Exercício 2 > Professor:
+# Exercício 2 > respota Professor:
 def par_impar(numero):
     multiplo_de_dois = numero % 2 == 0
 
