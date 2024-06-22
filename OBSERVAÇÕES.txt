@@ -1,0 +1,6 @@
+Pontos do Cursos a serem análisado novamente :
+
+- Laços For
+- Funções
+- Closure e Funções que retornam outras Funções
+
