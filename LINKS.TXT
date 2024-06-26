@@ -5,3 +5,7 @@ https://docs.python.org/pt-br/3/library/stdtypes.html
 * List Comprehension:
 
 https://youtu.be/1YbTDczvqco
+
+* Exceptions:
+
+https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
