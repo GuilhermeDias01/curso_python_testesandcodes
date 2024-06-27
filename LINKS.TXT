@@ -9,3 +9,7 @@ https://youtu.be/1YbTDczvqco
 * Exceptions:
 
 https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
+
+* Módulos:
+
+https://docs.python.org/3/py-modindex.html
