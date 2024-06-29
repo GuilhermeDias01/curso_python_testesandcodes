@@ -3,6 +3,7 @@ __all__= [
     'variavel',
     'soma_do_modulo',
     'nova_variavel',
+    'fala_oi',
 ]
 
 from aula110_package.modulo_b import fala_oi
