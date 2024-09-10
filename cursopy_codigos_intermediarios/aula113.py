@@ -5,16 +5,13 @@
 # Exercícios
 # Aumente os preços dos produtos a seguir em 10%
 # Gere novos_produtos por deep copy (cópia profunda)
-
 import copy
 
-from dados_package import produtos, p
+from dados_package import pprint, produtos
 
-novos_produtos = [
-    {**produto, 'preco':round(produto['preco'] * 1.10, 2)}
+novos_produtos = [{**produto, 'preco': round(produto['preco'] * 1.10, 2)}
     for produto in copy.deepcopy(produtos)
 ]
-
 
 
 
@@ -23,8 +20,7 @@ novos_produtos = [
 
 produtos_ordenados_por_nome = sorted(
     copy.deepcopy(produtos),
-    key=lambda produto: produto['nome'],
-    reverse=True,
+    key=lambda produto: produto['nome'], reverse= True
 )
 
 
@@ -37,10 +33,4 @@ produtos_ordenados_por_preco = sorted(
     key=lambda produto: produto['preco'],
 )
 
-p(produtos) 
-print('')
-p(novos_produtos)
-print('')
-p(produtos_ordenados_por_nome)
-print('')
-p(produtos_ordenados_por_preco)
+print(produtos_ordenados_por_preco)
